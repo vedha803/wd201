@@ -41,7 +41,7 @@ http
         response.end();
         break;
       case "/registration":
-        response.write(registrationContent);
+        response.write(registerContent);
         response.end();
         break;
     }
