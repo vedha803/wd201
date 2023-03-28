@@ -24,7 +24,7 @@ fs.readFile("registration.html", (err,register) => {
     if (err) {
         throw err;
     }
-    registerContent = register;
+    registrationContent = register;
 });
 
 http
@@ -41,7 +41,7 @@ http
         response.end();
         break;
       case "/registration":
-        response.write(registerContent);
+        response.write(registrationContent);
         response.end();
         break;
     }
