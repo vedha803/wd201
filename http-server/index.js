@@ -1,7 +1,7 @@
 const http = require("http");
 const fs = require("fs");
 
-const args = reqire("minimist")(process.argv.slice(2));
+const args = require("minimist")(process.argv.slice(2));
 let homeContent = "";
 let projectContent = "";
 let registrationContent = "";
