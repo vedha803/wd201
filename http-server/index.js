@@ -41,9 +41,9 @@ http
         response.end();
         break;
       case "/registration":
-    response.write(registrationContent);
-    response.end();
-    break;
+        response.write(registrationContent);
+        response.end();
+        break;
     }
   })
   .listen(args["port"]);
