@@ -40,7 +40,7 @@ http
         response.write(homeContent);
         response.end();
         break;
-    case "/registration":
+      case "/registration":
     response.write(registrationContent);
     response.end();
     break;
