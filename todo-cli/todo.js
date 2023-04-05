@@ -37,7 +37,7 @@ const todoList = () => {
       // Format the To-Do list here, and return the output string
       // as per the format given above.
       y = list.map((i)=> {
-        const isComplete =i.completed ? "[X]":"[ ]";
+        const isComplete =i.completed ? "[x]":"[ ]";
         const display = i.dueDate == today? "":i.dueDate;
         return `${isComplete} ${i.title.trim()} ${display.trim()}`;
       })
