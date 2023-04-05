@@ -19,15 +19,15 @@ const todoList = () => {
     function dueToday() {
         // Write the date check condition here and return the array
         // of todo items that are due today accordingly.
-        k = all.filter((Element)=>
-        Element.dueDate == today)
-        return k
+      k = all.filter((Element)=>
+      Element.dueDate == today)
+      return k
     }
   
     const dueLater = () => {
       // Write the date check condition here and return the array
       // of todo items that are due later accordingly.
-      k = all.Element((Element)=>
+      k = all.filter((Element)=>
       Element.dueDate == tomorrow)
       return k
 
@@ -41,7 +41,7 @@ const todoList = () => {
         const display = i.dueDate == today? "":i.dueDate;
         return `${isComplete}${i.title.trim()}${display.trim()}`;
       })
-      .join("/n");
+      .join("\n");
     return y;
 
     }
