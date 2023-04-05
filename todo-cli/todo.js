@@ -16,7 +16,7 @@ const todoList = () => {
       return k
     }
   
-    function dueToday() {
+    const dueToday = () => {
         // Write the date check condition here and return the array
         // of todo items that are due today accordingly.
       k = all.filter((Element)=>
@@ -37,9 +37,9 @@ const todoList = () => {
       // Format the To-Do list here, and return the output string
       // as per the format given above.
       y = list.map((i)=> {
-        const isComplete =i.completed ? "[X]":"[]";
+        const isComplete =i.completed ? "[X]":"[ ]";
         const display = i.dueDate == today? "":i.dueDate;
-        return `${isComplete}${i.title.trim()}${display.trim()}`;
+        return `${isComplete} ${i.title.trim()} ${display.trim()}`;
       })
       .join("\n");
     return y;
